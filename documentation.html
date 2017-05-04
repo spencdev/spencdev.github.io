@@ -14,33 +14,66 @@
   		<div class="jumbotron-padding">
   			<div class="container">
   				<div class="container-fluid">
-  					<h2>Documentation</h2>
-            <a href="index.html">back</a>
+  					<h2>Project Documentation</h2>
+            <nav aria-label="...">
+    					<ul class="pager">
+      					<li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> back</a></li>
+  						</ul>
+  					</nav>
   			</div>
   		</div>
   	</div>
   </div>
   </header>
-  <div class="container">
-  	<div class="container-fluid">
-  		<div class="panel panel-default">
-  			<div class="panel-heading">
-  				<div class="panel-title">YouTube presentation</div>
-  			</div>
-  				<div class="panel-body">
+
+
   					<div class="container">
   						<div class="container-fluid">
+                <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LL2wdCgQNFM?ecver=1" frameborder="0" allowfullscreen></iframe>
+              </center>
+              </br>
 
-  					<div id="chartBestYear">Hello World</div>
+            <h3>Data set</h3>
+            <p>For our visualization, we retrieved our data from Kaggle. The dataset has 20 years worth of information for all games released from 1996 to 2016. Information including release date, rating, titles, gaming system, etc. The dataset contains over 18,000 lines of data with 11 different attributes. For our visualization we only wanted to utilize 8 of those attributes. You can find the dataset HERE</p>
+
+            </br>
+
+            <h3>Design Process</h3>
+              <p>To start off, we began our basic analysis of the IGN data set we retrieved. We analyzed the different categories in each column to evaluate which variables would best suited for measuring this data set. After analyzing, we started sketching up potential visualizations that could express the data. During the data analyzation our group also formulated several questions to answer from the data set. Some of the top questions we wanted to answer were:</p>
+              <ul class="list-group">
+                <li class="list-group-item"><i>“Which year had the most game titles released?”</i></li>
+                <li class="list-group-item"><i>“How did the game titles perform overall?”</i></li>
+                <li class="list-group-item"><i>“How did individual game titles perform in respect to their rating?”</i></li>
+              </ul>
+
+            </br>
+
+            <h3>Rationale for Designs</h3>
+              <p>Initially, we wanted to make sure we could at least build a bar chart with our chosen data set. We decided to utilize a simple vertical bar chart to express how individual games performed. Each game title was assigned a different shade of color scaling from green(good)-yellow(okay)-red(bad). To support interactivity, our group chose to leave out meta-data text from the graph. Leaving out the meta-data text allowed us to add more records of titles to compare, it also forced the user to interact with the visual. Each bar would change color as the user hovered over the desired data. The data for each bar would also appear next the point of hover to read. However, we began having issues with this visual due to the amount of records it was attempting to measure. Our bar chart ended up going off our page and we started strategizing solutions immediately for a modified visual that could accommodate the data set.</p>
+
+            </br>
+
+            <h3>Improvements</h3>
+              <p>Revisiting our variables and data set for additional analyzation was very successful. Our group decided on a few variables to measure instead of using every column in the data set.</p>
+              <p>Our group knew we wanted to view the game title releases in some format with the date variable. The first main visual consists of a vertical stacked bar chart. The x axis contains the category label for the years, while the y axis measures game title releases within each year. Our group also took advantage of the “score_phrase” variable, which is associated with the “score” variable that we were trying to use in our first attempt. The “score_phrase” or ratings, uses a color scale that differentiates between the higher and lower performing game titles. The legend above associates the color and rating together. We stayed with same color concept, green for high performing and red for lower. However, this time we leveraged on using other colors in between green and red to assist with the overall contrast. We believe the color format also assists with spotting trends and other interesting areas. Hovering over a specific area of game title ratings will draw a dotted line to that associated value on the y axis while also showing the total game title releases for that years node. We took advantage of using this color plate scale for the rest of our other visualizations to keep consistency.</p>
+              <p>Our other two visualizations look at smaller areas of our data set. The modern systems game title performances is a horizontal bar chart. We wanted to utilize the horizontal bar chart to measure game title releases for modern game systems. These modern gaming systems were and still are large competitors, viewing their data horizontally demonstrates the data in a competing manor. The last visual consists of a donut chart that shows the rating percentage for every game title release. Hovering over each portion of the donut chart will display the actual percentage data for that associated node.</p>
+
+          </br>
+
+            <h3>Data Findings and Conclusions</h3>
+              <i>Vertical Barchart Visual</i>
+              <p>There were a few interesting items to point out on this first visual. One of our questions was to figure out which year had the most game title release overall. We found that 2008 had the most game title releases, which was interesting to think about since many significant events happened around that time. Another interesting area to point out are the two giant positive growing trends that starting from 1996 - 2008 with game title release. Right at 2008 the amount of game title releases fell at a negative trend to 2016. One last interesting area in respect to the game title ratings, specifically the ‘awful’ rating, which is denoted in red. The awful ratings seem to fluctuate from 1997 - 2008. Then from 2008 - 2016, the gap for that rating begins to close up. We believe there could be a correlation between games getting better due advances in video game development. </p>
+
+              <i>Horizontal Barchart Visual & Donut Chart Visual</i>
+              <p>The horizontal chart comparing the game title releases for modern game systems shows a few insightful areas. Xbox One and Playstation 4 are hard to compare due to how recent the game systems are in respect to time. The PC shows the highest volume for game title releases, most likely because the PC is one of the longest standing game systems. The data also shows how Playstation 2 dominated Xbox in game title release, but then Xbox 360 almost surpassed Playstation 2 and 3 in game title releases. The donut chart, which displays the rating percentage for every game title released, can tell us exactly how games have been performing over the course of our entire data set. On average, 26% of all game releases are rated ‘Good’ and 25% ‘Great’.  The donut chart was a great way to demonstrate how all game titles have performed versus the barcharts, that do not really express the data in the same manner as the donut chart.</p>
 
   				</div>
   			</div>
-  		</div>
-  	</div>
-  </div>
-</div>
 
-  	<div class="panel-footer"><h2 class="font-lg">Footer area</h2></div>
+
+
+  	<div class="panel-footer"><h2 class="font-lg"></h2></div>
 
 </body>
 </html>
